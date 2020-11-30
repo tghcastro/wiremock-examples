@@ -1,0 +1,14 @@
+{
+  "priority": 5,
+  "request": {
+    "method": "GET",
+    "urlPattern": ".*\\/api\\/v1\\/helloworld"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"message\":\"hello world\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
