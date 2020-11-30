@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "330b75d5-4129-462d-8cfd-b7dacb7f4a2d",
+		"name": "wiremock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Mappings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mapping by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/mappings/136f1d38-89b2-4dfe-9fa4-da2cb58d0775",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"mappings",
+						"136f1d38-89b2-4dfe-9fa4-da2cb58d0775"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/mappings/136f1d38-89b2-4dfe-9fa4-da2cb58d0775",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"mappings",
+						"136f1d38-89b2-4dfe-9fa4-da2cb58d0775"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Mapping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/mappings/",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"mappings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/mappings",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"mappings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/requests",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/requests/a615c8bf-db2e-4dd4-82f9-f83266093298",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"requests",
+						"a615c8bf-db2e-4dd4-82f9-f83266093298"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Requests",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/requests",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Requests",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/requests/find",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"requests",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Unmatched Requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{wiremock-base}}/__admin/requests/unmatched",
+					"protocol": "http",
+					"host": [
+						"{{wiremock-base}}"
+					],
+					"path": [
+						"__admin",
+						"requests",
+						"unmatched"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
