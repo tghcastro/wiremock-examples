@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  wiremock:
+    build:
+      context: https://github.com/tghcastro/wiremock-examples.git
+    ports:
+      - "8080:8080"
